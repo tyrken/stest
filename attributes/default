@@ -1,0 +1,7 @@
+#
+# Cookbook Name:: nginx
+# Attributes:: default
+#
+
+default['stest']['app_port'] = '8484'
+default['stest']['app_nodes'] = {}

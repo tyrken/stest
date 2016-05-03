@@ -1,0 +1,14 @@
+upstream sample_app {
+  <% @app_nodes.each do |dummy, app_node| %>
+  server <%= app_node %>:<%= @app_port %>;
+  <% end %>
+}
+
+server {
+  listen 80;
+  server_name _;
+
+  location / {
+    proxy_pass http://sample_app;
+  }
+}

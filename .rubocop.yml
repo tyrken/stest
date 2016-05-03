@@ -1,0 +1,5 @@
+Lint/AmbiguousRegexpLiteral:
+  Exclude:
+    - 'test/acceptance/app/app_spec.rb'
+    - 'test/acceptance/web/web_spec.rb'
+    - 'test/acceptance/web/load_balancing_spec.rb'
